@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* SpamGaze palette - light mode */
+    --background: 0.962 0.008 220;
+    --foreground: 0.18 0.015 240;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.015 240;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.015 240;
+    --primary: 0.52 0.095 192;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.94 0.01 220;
+    --secondary-foreground: 0.18 0.015 240;
+    --muted: 0.94 0.01 220;
+    --muted-foreground: 0.52 0.01 260;
+    --accent: 0.94 0.01 220;
+    --accent-foreground: 0.18 0.015 240;
+    --destructive: 0.52 0.16 27;
+    --destructive-foreground: 1 0 0;
+    --border: 0.92 0.005 220;
+    --input: 0.92 0.005 220;
+    --ring: 0.52 0.095 192;
+
+    /* Chart colors */
+    --chart-1: 0.52 0.095 192;
+    --chart-2: 0.52 0.16 27;
+    --chart-3: 0.65 0.12 192;
+    --chart-4: 0.75 0.08 192;
+    --chart-5: 0.38 0.08 230;
+
+    /* Hero dark */
+    --hero-dark: 0.18 0.04 220;
+    --hero-dark-2: 0.24 0.05 220;
+
+    /* Spam/Ham colors */
+    --spam: 0.52 0.16 27;
+    --ham: 0.52 0.095 192;
+
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
